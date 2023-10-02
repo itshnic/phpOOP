@@ -70,10 +70,19 @@ move_uploaded_file("откуда","куда") перенос файла
 
 #### 3. Работа базой данных MySQL
 
+Connect MySQL:
+
 ```php
-mysqli_connect("localhost","user","Pass","DB_name") подключение к базе данных
+mysqli_connect("localhost","user","Pass","DB_name","имя  порта" ) подключение к базе данных
 mysqli_query($link,"команда на получение данных") обращение к базе данных
 $array = mysqli_fetch_assoc($query) прердаем данные в ассоциативный массив + or die("error") - ошибка при подключении
+
+```
+
+Command for BD:
+
+```SQL
+
 
 ```
 
